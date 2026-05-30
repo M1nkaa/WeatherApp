@@ -1,66 +1,68 @@
 # 🌤 Weather App
 
-Приложение для просмотра текущей погоды по названию города.
+An Android app that shows current weather for any city using the OpenWeatherMap API.
 
-## 📸 Скриншоты
+## 📸 Screenshots
 
-| Главный экран | Результат поиска |
+| Home Screen | Weather Result |
 |---|---|
-| _скриншот сюда_ | _скриншот сюда_ |
+| <img width="645" height="1357" alt="image" src="https://github.com/user-attachments/assets/a5c032dd-9138-41ec-9411-bd36f874c084" />
+ | <img width="640" height="1354" alt="image" src="https://github.com/user-attachments/assets/7cf15811-1966-45af-be11-a488c9306c95" />
+ |
 
-## 🚀 Функциональность
+## ✨ Features
 
-- Поиск погоды по названию города
-- Отображение температуры, описания погоды
-- Обработка ошибок (неверный город, нет интернета)
-- Индикатор загрузки во время запроса
+- Search weather by city name
+- Display temperature and weather description
+- Error handling for invalid city or no internet
+- Loading indicator during network requests
 
-## 🛠 Стек технологий
+## 🛠 Tech Stack
 
 - **Kotlin**
-- **Retrofit2** — HTTP-запросы к API
-- **Gson** — парсинг JSON
-- **ViewModel + LiveData** — архитектура MVVM
-- **Coroutines** — асинхронные запросы
+- **Retrofit2** — HTTP requests
+- **Gson** — JSON parsing
+- **ViewModel + LiveData** — MVVM architecture
+- **Coroutines** — asynchronous operations
 - **OpenWeatherMap API**
 
-## 📁 Структура проекта
+## 📁 Project Structure
 
 ```
 app/src/main/
 ├── java/com/m1nkaa/weatherapp/
-│   ├── MainActivity.kt        # UI и наблюдение за данными
-│   ├── MainViewModel.kt       # Бизнес-логика, запросы к API
-│   ├── WeatherApi.kt          # Retrofit интерфейс
-│   └── WeatherResponse.kt     # Модели данных
+│   ├── MainActivity.kt        # UI and data observation
+│   ├── MainViewModel.kt       # Business logic and API calls
+│   ├── WeatherApi.kt          # Retrofit interface
+│   └── WeatherResponse.kt     # Data models
 └── res/
     └── layout/
         └── activity_main.xml
 ```
 
-## ⚙️ Настройка
+## ⚙️ Setup
 
-1. Зарегистрируйся на [openweathermap.org](https://openweathermap.org) и получи API ключ
-2. В файле `MainActivity.kt` замени значение:
+1. Register at [openweathermap.org](https://openweathermap.org) and get a free API key
+2. In `MainActivity.kt`, replace the placeholder:
 ```kotlin
-private val API_KEY = "ВАШ_API_КЛЮЧ"
+private val API_KEY = "YOUR_API_KEY_HERE"
 ```
 
-## ▶️ Запуск
+## ▶️ Getting Started
 
-1. Клонируй репозиторий
+1. Clone the repository
 ```bash
 git clone https://github.com/m1nkaa/WeatherApp.git
 ```
-2. Открой в **Android Studio**
-3. Добавь свой API ключ в `MainActivity.kt`
-4. Запусти на эмуляторе или реальном устройстве (API 24+)
+2. Open in **Android Studio**
+3. Add your API key to `MainActivity.kt`
+4. Run on an emulator or real device (API 24+)
 
-## 📚 Чему научилась
+## 📚 What I Learned
 
-- Архитектура **MVVM** (Model-View-ViewModel)
-- Работа с **REST API** через Retrofit
-- **Coroutines** для асинхронных операций
-- **LiveData** для реактивного обновления UI
-- Обработка сетевых ошибок
-- Git flow: ветки, коммиты, Pull Requests
+- **MVVM** architecture pattern
+- Working with **REST API** via Retrofit
+- **Coroutines** for async operations
+- **LiveData** for reactive UI updates
+- Network error handling
+- Git flow: branches, commits, Pull Requests
