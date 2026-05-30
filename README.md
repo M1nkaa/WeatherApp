@@ -5,10 +5,8 @@ An Android app that shows current weather for any city using the OpenWeatherMap 
 ## 📸 Screenshots
 
 | Home Screen | Weather Result |
-|---|---|
-| <img width="645" height="1357" alt="image" src="https://github.com/user-attachments/assets/a5c032dd-9138-41ec-9411-bd36f874c084" />
- | <img width="640" height="1354" alt="image" src="https://github.com/user-attachments/assets/7cf15811-1966-45af-be11-a488c9306c95" />
- |
+|-------------|----------------|
+| <img width="322" height="678" alt="image" src="https://github.com/user-attachments/assets/a5c032dd-9138-41ec-9411-bd36f874c084" /> | <img width="322" height="678" alt="image" src="https://github.com/user-attachments/assets/7cf15811-1966-45af-be11-a488c9306c95" /> |
 
 ## ✨ Features
 
